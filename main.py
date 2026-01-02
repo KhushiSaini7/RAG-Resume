@@ -70,11 +70,10 @@ def qna_rag(question):
         ("human", f"Context:\n{context}\n\nQuestion:\n{question}")
     ]
 
-    # 3. Generate Answer
     response = llm.invoke(messages)
     return response.content
 
-# Example question
+# Example question here
 
 question = "Give education details?"
 print(qna_rag(question))
